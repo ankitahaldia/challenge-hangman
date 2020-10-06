@@ -1,13 +1,15 @@
-import random
 from game import Hangman
 
 
 def main():
-    words = ["violet", "purple" , "magenta"]
-    life = 5
-    hangman = Hangman(random.choice(words))
     
-    Hangman.start_game(hangman,life)
+    '''
+    instantiating hangman class object 
+    to play the game
+    '''
+
+    hangman = Hangman()
+    Hangman.start_game(hangman)
     
 if __name__ == '__main__':
     main()
